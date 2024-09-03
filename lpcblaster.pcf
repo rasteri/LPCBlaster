@@ -1,0 +1,10 @@
+set_io CLK     1
+set_io reset     2
+set_io LPC_FRM     3
+set_io LPC_DATA[0]     4
+set_io LPC_DATA[1]     7
+set_io LPC_DATA[2]     8
+set_io LPC_DATA[3]     9
+set_io SERIRQ     10
+set_io LPC_DREQ     11
+

@@ -29,10 +29,10 @@ module sblaster
 	input LPC_FRM,
 	inout [3:0] LPC_DATA,
 	inout SERIRQ,
-	output reg LPC_DREQ,
+	output reg LPC_DREQ//,
 
-	output [15:0] audio_l,
-	output [15:0] audio_r
+	//output [15:0] audio_l,
+	//output [15:0] audio_r
 	);
 	
 	wire ym_clk = CLK;
@@ -212,8 +212,8 @@ module sblaster
 	reg [16:0] dac_left;
 	reg [16:0] dac_right;
 	
-	assign audio_l = dac_left[15:0];
-	assign audio_r = dac_right[15:0];
+	//assign audio_l = dac_left[15:0];
+	//assign audio_r = dac_right[15:0];
 	
 	reg dsp_spk;
 	
